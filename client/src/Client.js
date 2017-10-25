@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 function search(query, cb) {
-  return fetch(`http://localhost:8000/eyhub/wp-json/ey-hub/v1/api-articles.json?q=${query}`, {
+  return fetch(`api/food?q=${query}`, {
     accept: "application/json"
   })
     .then(checkStatus)
