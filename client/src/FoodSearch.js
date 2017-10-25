@@ -50,10 +50,9 @@ class FoodSearch extends React.Component {
     const foodRows = foods.map((food, idx) => (
       <tr key={idx} onClick={() => this.props.onFoodClick(food)}>
         <td>{food.description}</td>
-        <td className="right aligned">{food.kcal}</td>
-        <td className="right aligned">{food.protein_g}</td>
-        <td className="right aligned">{food.fat_g}</td>
-        <td className="right aligned">{food.carbohydrate_g}</td>
+        <td className="right aligned">{food.title}</td>
+        <td className="right aligned">{food.thumbnail}</td>
+        <td className="right aligned">{food.tag}</td>
       </tr>
     ));
 
@@ -84,10 +83,9 @@ class FoodSearch extends React.Component {
             </tr>
             <tr>
               <th className="eight wide">Description</th>
-              <th>Kcal</th>
-              <th>Protein (g)</th>
-              <th>Fat (g)</th>
-              <th>Carbs (g)</th>
+              <th>Title</th>
+              <th>Thumbnail</th>
+              <th>Tag</th>
             </tr>
           </thead>
           <tbody>
